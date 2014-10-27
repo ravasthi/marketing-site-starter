@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- meta tags -->
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+ <!-- stylesheets -->
+ <link rel="stylesheet" type="text/css" media="all" href="styles-compiled/application.css"/>
+
+ <!-- conditional comments -->
+ <!--[if IE]>
+  <link rel="stylesheet" type="text/css" media="all" href="styles-compiled/ie.css" />
+ <![endif]-->
+
+ <!-- print stylesheet -->
+ <link rel="stylesheet" type="text/css" media="print" href="styles-compiled/print.css"/>
+
+ <!-- external styles -->
+ <!-- <link rel="stylesheet" type="text/css" media="all" href="http://code.jquery.com/ui/1.8.23/themes/redmond/jquery-ui.css"/> -->
+
+ <!-- Favicons and touch icons -->
+ <!-- For retina-display iPads -->
+ <link href="images/apple-touch-icon-ipad-retina.png" rel="apple-touch-icon-precomposed" sizes="152x152" type="image/png"/>
+ <!-- For retina-display iPhones -->
+ <link href="images/apple-touch-icon-iphone-retina.png" rel="apple-touch-icon-precomposed" sizes="120x120" type="image/png"/>
+ <!-- For non-retina iPad -->
+ <link href="images/apple-touch-icon-ipad.png" rel="apple-touch-icon-precomposed" sizes="76x76" type="image/png"/>
+ <!-- For non-retina iPhone and Android -->
+ <link href="images/apple-touch-icon-iphone.png" rel="apple-touch-icon-precomposed" type="image/png"/>
+ <!-- For Nokia -->
+ <link href="images/apple-touch-icon-iphone.png" rel="shortcut icon"/>
+ <!-- For everything else -->
+ <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
+ <!-- header javascript -->
+ <!-- stand-alone utilities -->
+ <script type="text/javascript" src="scripts/vendor/fiftyfive-utils/55_utils.js">
+ </script>
+
+ <script type="text/javascript">
+  document.getElementsByTagName("html")[0].className += fiftyfive.util.getIEClass();
+
+  // scroll to hide iPhone URL bar; from http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/
+  /iphone/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+   if (!pageYOffset) window.scrollTo(0, 1);
+  }, 1000);
+ </script>
+
+ <!-- HTML5 and media query polyfill for IE8 and below -->
+ <script src="scripts/vendor/shivs-custom.js" type="text/javascript"></script>
+
+ <title>CSS3/HTML5 scaffolding</title>
+</head>
+<body id="home" class="marketing-site">
+ <div class="page">
+  <div class="header-wrapper">
+    <header class="global">
+      <a class="show-nav-menu" href="javascript:;"></a>
+      <a href="/" class="branding"></a>
+      <nav>
+        <a href="#feature-one">Feature One</a>
+        <a href="#feature-two">Feature Two</a>
+        <a href="#feature-three">Feature Three</a>
+      </nav>
+    </header>
+  </div> <!-- /.header-wrapper -->
+
+  <section id="hero">
+   <div class="hero-inner">
+    <figure class="hero-image">
+     <img src="images/grey.png" width="500" height="300" alt="Hero image" />
+    </figure>
+    <h1>Value proposition</h1>
+    <p>Cred try-hard umami aliqua, viral ex Williamsburg Tumblr selfies enim Etsy XOXO aliquip Vice. 90's keytar kale chips sed leggings, id try-hard fap typewriter non dolore authentic. Shabby chic beard meggings irony sint. Culpa Marfa biodiesel swag keffiyeh id. Id consequat assumenda, eu beard sint you probably haven't heard of them kale chips master cleanse selfies ethical Williamsburg Brooklyn Carles gastropub. Cupidatat leggings put a bird on it selvage, drinking vinegar excepteur duis quis. VHS chambray actually mustache literally, gluten-free do dolore hashtag Banksy banh mi +1 retro.</p>
+   </div> <!-- /.hero-inner -->
+  </section> <!-- /#hero -->
+
+  <section id="feature-one" class="feature">
+   <div class="feature-inner">
+    <div class="feature-image">
+     <img src="images/grey.png" width="400" height="300" alt="Feature image" />
+    </div> <!-- /.feature-image -->
+    <div class="copy">
+     <h2>Feature one</h2>
+     <p>Sunt Bushwick assumenda, plaid kitsch whatever farm-to-table sriracha ugh duis wayfarers. Brooklyn quinoa pickled, retro ugh street art meggings aliqua. Fingerstache dolore Shoreditch laborum sapiente, tilde enim whatever locavore skateboard literally delectus cray cardigan.</p>
+    </div> <!-- /.copy -->
+   </div> <!-- /.feature-inner -->
+  </section> <!-- /#feature-one -->
+
+  <section id="feature-two" class="feature alt">
+   <div class="feature-inner">
+    <div class="feature-image">
+     <img src="images/grey.png" width="400" height="300" alt="Feature image" />
+    </div> <!-- /.feature-image -->
+    <div class="copy">
+     <h2>Feature two</h2>
+     <p>Umami nisi odio Bushwick, pariatur flannel letterpress fixie art party. Accusamus esse ex, polaroid tilde 90's commodo beard swag incididunt meggings lo-fi. Salvia messenger bag nulla vero, hashtag VHS et blog before they sold out fixie. Kale chips Helvetica kogi, seitan pop-up Portland fixie crucifix gastropub non single-origin coffee meh four loko officia aesthetic.</p>
+    </div> <!-- /.copy -->
+   </div> <!-- /.feature-inner -->
+  </section> <!-- /#feature-two -->
+
+  <section id="feature-three" class="feature">
+   <div class="feature-inner">
+    <div class="feature-image">
+     <img src="images/grey.png" width="400" height="300" alt="Feature image" />
+    </div> <!-- /.feature-image -->
+    <div class="copy">
+     <h2>Feature three</h2>
+     <p>Whatever food truck swag nihil viral. Slow-carb Tumblr Wes Anderson minim eu. Fingerstache fap mlkshk seitan selvage Helvetica. Gentrify shabby chic quis VHS. Tonx High Life consequat, craft beer polaroid Portland non Truffaut aute. Etsy Banksy 3 wolf moon normcore aesthetic. Godard letterpress do, street art ex bitters dolore quinoa banjo Schlitz chillwave tousled tilde incididunt Echo Park.</p>
+    </div> <!-- /.copy -->
+   </div> <!-- /.feature-inner -->
+  </section> <!-- /#feature-three -->
+
+  <div class="footer-wrapper">
+   <footer class="global">
+    &copy; 2014 Your Company.
+   </footer>
+  </div> <!-- /.footer-wrapper -->
+ </div> <!-- /.page -->
+
+ <!-- all other javascript goes at the end of the body -->
+ <!-- libraries -->
+ <script type="text/javascript" src="scripts/vendor/jquery.js">
+ </script>
+ <!-- <script type="text/javascript" src="scripts/vendor/jquery-ui.js">
+ </script> -->
+ <script type="text/javascript" src="scripts/vendor/jquery-ui.widget.js">
+ </script>
+
+ <!-- utilities and library extensions -->
+ <!-- uncomment as necessary -->
+ <!-- <script type="text/javascript" src="scripts/vendor/fiftyfive-utils/cookies.js">
+ </script>
+ <script type="text/javascript" src="scripts/vendor/fiftyfive-utils/dump.js">
+ </script>
+ <script type="text/javascript" src="scripts/vendor/fiftyfive-utils/strftime.js">
+ </script>
+ <script type="text/javascript" src="scripts/vendor/fiftyfive-utils/feature-detect.js">
+ </script>
+ <script type="text/javascript" src="scripts/vendor/fiftyfive-utils/jquery.55_utils.js">
+ </script>
+ <script type="text/javascript" src="scripts/vendor/fiftyfive-utils/jquery.ui.forminputplaceholdertext.js">
+ </script>
+ <script type="text/javascript" src="scripts/vendor/fiftyfive-utils/jquery.ui.unsupportedbrowserwarning.js">
+ </script> -->
+ <script type="text/javascript" src="scripts/jquery.ui.flyout.js">
+ </script>
+ <script type="text/javascript" src="scripts/jquery.ui.animatescroll.js">
+ </script>
+ <script type="text/javascript" src="scripts/common.js">
+ </script>
+
+ <!-- page- or feature-specific javascript -->
+ <!-- <script type="text/javascript" src="scripts/home.js">
+ </script> -->
+
+ <!-- onload javascript -->
+ <script type="text/javascript">
+  (function($) {
+   $(function() {
+    MarketingSiteStarter.commonInit();
+   });
+  })(jQuery);
+ </script>
+</body>
+</html>

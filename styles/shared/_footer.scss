@@ -1,0 +1,15 @@
+/*-----[ footer ]---------------------------------------------------------------
+| Common page footer styles.
+*/
+.footer-wrapper
+{
+  border-top: 2px solid $light-stroke;
+  background-color: $accent-bg;
+  color: $secondary-text-color;
+}
+
+footer.global
+{
+  @include container();
+  padding: $vertical-nudge gutter();
+}

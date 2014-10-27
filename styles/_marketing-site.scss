@@ -1,0 +1,80 @@
+/*-----[ marketing site ]--------------------------------------------------------
+| Styles for a typical marketing site.
+*/
+.marketing-site
+{
+  .hero-inner, .feature-inner
+  {
+    @include container();
+    padding: $body-text-line-height gutter();
+  }
+
+  .hero-image, .feature-image
+  {
+    text-align: center;
+    
+    img
+    {
+      max-width: 100%;
+    }
+  }
+
+  .hero-inner
+  {
+    h1, p
+    {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  .hero-inner, .feature-inner
+  {
+    h1, h2, p
+    {
+      max-width: 35 * $body-text-size;
+    
+      @media (max-width: $screen-sm-max)
+      {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  
+  .feature-inner
+  {
+    padding-top: $section-spacing;
+    padding-bottom: $section-spacing;
+    
+    @media (min-width: $screen-md-min)
+    {
+      .feature-image
+      {
+        @include span(4);
+      }
+
+      .copy
+      {
+        @include span(last 8);
+      }
+    }
+  }
+  
+  .alt .feature-inner
+  {
+    @media (min-width: $screen-md-min)
+    {
+      .feature-image
+      {
+        @include span(last 4);
+      }
+
+      .copy
+      {
+        @include span(8);
+      }
+    }
+  }
+}

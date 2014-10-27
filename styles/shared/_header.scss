@@ -1,0 +1,96 @@
+/*-----[ header ]---------------------------------------------------------------
+| Common page header styles.
+*/
+.header-wrapper
+{
+  border-bottom: 2px solid $light-stroke;
+}
+
+header.global
+{
+  $logo-height: image-height('logo.png');
+
+  @include container();
+  padding: $body-text-line-height/2 gutter();
+
+  .branding
+  {
+    display: inline-block;
+    @include retina-image('logo');
+    text-decoration: none;
+  }
+
+  .show-nav-menu
+  {
+    display: inline-block;
+    float: right;
+    @include box-sizing(border-box);
+    border: 1px solid $light-stroke;
+    @include border-radius(5px);
+    width: 1.5 * $column-width;
+    color: $secondary-text-color;
+    text-align: center;
+    text-decoration: none;
+
+    &:before
+    {
+      @include fa-icon(angle-down);
+    }
+
+    &.up:before
+    {
+      @include fa-icon(angle-up);
+    }
+
+    &:hover
+    {
+      background-color: $greyish-white;
+    }
+  }
+
+  @media (max-width: $screen-xs-max)
+  {
+    nav
+    {
+      display: none;
+      margin-top: $vertical-nudge;
+
+      a
+      {
+        display: block;
+        margin-bottom: $vertical-nudge;
+
+        &:last-child
+        {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $screen-sm-min)
+  {
+    .branding
+    {
+      float: left;
+    }
+
+    .show-nav-menu
+    {
+      display: none;
+    }
+
+    nav
+    {
+      display: block;
+      @include span(last 8);
+      text-align: right;
+
+      a
+      {
+        margin-left: $column-width;
+        line-height: $logo-height;
+      }
+    }
+  }
+}
